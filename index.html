@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link id="changeCSS" rel="stylesheet" href="boring.css" />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <main>
+      <div class="image__wrapper">
+        <img
+          src="images/illustration-woman-online-mobile.svg"
+          id="hero__img__mobile"
+        />
+        <img
+          src="images/illustration-woman-online-desktop.svg"
+          id="hero__img__desktop"
+        />
+        <img src="images/illustration-box-desktop.svg" id="hero__img__box" />
+      </div>
+      <div class="content__wrapper">
+        <h1 class="title">FAQ</h1>
+
+        <section>
+          <div class="question">
+            <span class="section__header">
+              How many team members can I invite?
+            </span>
+            <button>
+              <button>
+                <img src="images/icon-arrow-down.svg" alt="arrow" id="arrow" />
+              </button>
+            </button>
+          </div>
+          <div class="answer">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </div>
+        </section>
+        <section>
+          <div class="question">
+            <span class="section__header">
+              What is the maximum file upload size?
+            </span>
+            <button>
+              <img src="images/icon-arrow-down.svg" alt="arrow" id="arrow" />
+            </button>
+          </div>
+          <div class="answer">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </div>
+        </section>
+        <section>
+          <div class="question">
+            <span class="section__header">How do I reset my password? </span>
+            <button>
+              <img src="images/icon-arrow-down.svg" alt="arrow" id="arrow" />
+            </button>
+          </div>
+          <div class="answer">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </div>
+        </section>
+        <section>
+          <div class="question">
+            <span class="section__header">Can I cancel my subscription? </span
+            ><button>
+              <img src="images/icon-arrow-down.svg" alt="arrow" id="arrow" />
+            </button>
+          </div>
+          <div class="answer">
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </div>
+        </section>
+        <section>
+          <div class="question">
+            <span class="section__header"
+              >Do you provide additional support?
+            </span>
+            <button>
+              <img src="images/icon-arrow-down.svg" alt="arrow" id="arrow" />
+            </button>
+          </div>
+          <div class="answer">
+            <p>
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/kacper-reiman"
+        target="_blank"
+        >Kacper Reiman</a
+      >.
+    </div>
+    <div class="theme">
+      Boring theme
+      <div class="switch">
+        <label onclick="toggleTheme();" class="switch"
+          ><input type="checkbox" />
+          <div></div>
+        </label>
+      </div>
+      Awesome theme
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
