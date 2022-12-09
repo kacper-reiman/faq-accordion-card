@@ -27,6 +27,7 @@ ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  font-size: 12px;
 }
 
 ol,
@@ -132,7 +133,7 @@ button {
   cursor: pointer;
 }
 
-#arrow {
+.arrow {
   height: 0.7rem;
   width: 0.8rem;
   transition: 0.5s;
@@ -146,11 +147,11 @@ button {
 .active .answer {
   display: block;
 }
-.active .question {
+.active .question > h2 {
   font-weight: var(--fw__bold);
   color: var(--clr__text__300);
 }
-.active #arrow {
+.active .arrow {
   transform: rotate(180deg);
   transition: 0.5s ease-in;
 }
