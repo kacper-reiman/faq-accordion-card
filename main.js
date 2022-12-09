@@ -1,3 +1,4 @@
+// ADDING ACTIVE CLASS TO AN ELEMENT TO REVEAL CONTENT
 let questions = document.querySelectorAll(".question");
 
 questions.forEach((question) =>
@@ -14,24 +15,22 @@ questions.forEach((question) =>
   })
 );
 
-function toggleTheme() {
-  let boringLink = document.getElementById("changeCSS");
-  let cssFile;
+// TOGGLE THEME FUNCTION
+const toggleBtn = document.querySelector(".theme__switch");
+// const heroImageDesktop = document.getElementById("hero__img__desktop");
+// const heroImageMobile = document.getElementById("hero__img__mobile");
 
-  if (boringLink.getAttribute("href") === "boring.css") {
-    cssFile = "awesome.css";
+function changeTheme(e) {
+  if (e.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    document.getElementById("hero__img__desktop").style.opacity = "0.8";
+    document.getElementById("hero__img__mobile").style.opacity = "0.8";
+    document.getElementById("hero__img__box").style.opacity = "0.8";
   } else {
-    cssFile = "boring.css";
+    document.documentElement.setAttribute("data-theme", "light");
+    document.getElementById("hero__img__desktop").style.opacity = "1";
+    document.getElementById("hero__img__mobile").style.opacity = "1";
+    document.getElementById("hero__img__box").style.opacity = "1";
   }
-
-  let awesomeLink = document.createElement("link");
-  awesomeLink.setAttribute("id", "changeCSS");
-  awesomeLink.setAttribute("rel", "stylesheet");
-
-  awesomeLink.setAttribute("href", cssFile);
-
-  document
-    .getElementsByTagName("head")
-    .item(0)
-    .replaceChild(awesomeLink, boringLink);
 }
+toggleBtn.addEventListener("click", changeTheme);

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link id="changeCSS" rel="stylesheet" href="boring.css" />
+    <link id="changeCSS" rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
@@ -109,15 +109,13 @@
         >Kacper Reiman</a
       >.
     </div>
-    <div class="theme">
-      Boring theme
-      <div class="switch">
-        <label onclick="toggleTheme();" class="switch"
-          ><input type="checkbox" />
-          <div></div>
-        </label>
-      </div>
-      Awesome theme
+    <div class="theme__switch__container">
+      <label for="checkbox" class="theme__switch">
+        <input type="checkbox" id="checkbox" />
+        <div class="slide__btn">
+          <div class="btn__label">Toggle theme</div>
+        </div>
+      </label>
     </div>
     <script src="main.js"></script>
   </body>
