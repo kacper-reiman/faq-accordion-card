@@ -40,7 +40,7 @@ ul {
   --clr__text__300: hsl(14, 100%, 56%);
   --clr__text__400: hsl(240, 6%, 50%);
   --clr__text__500: hsl(237, 12%, 33%);
-  --clr__text__600: hsl(238, 29%, 16%);
+  --clr__text__600: hsl(237, 12%, 33%);
   --clr__bg__400: hsl(273, 60%, 70%);
   --clr__bg__500: hsl(240, 73%, 59%);
   --clr__divider__100: hsl(240, 5%, 91%);
@@ -50,7 +50,7 @@ ul {
   --clr__text__300: hsl(14, 100%, 56%);
   --clr__text__400: hsl(237, 20%, 66%);
   --clr__text__500: hsl(218, 7%, 77%);
-  --clr__text__600: hsl(238, 29%, 16%);
+  --clr__text__600: hsl(240, 9%, 40%);
   --clr__text__700: hsl(0, 0%, 98%);
   --clr__bg__400: hsl(274, 64%, 14%);
   --clr__bg__500: hsl(240, 71%, 13%);
@@ -86,7 +86,8 @@ main {
   align-items: center;
   border-radius: 2rem;
   padding: 3rem;
-  box-shadow: 0 0 0.5rem var(--clr__000);
+  box-shadow: 0.1rem 0.1rem 0.1rem var(--clr__text__600);
+  /* opacity: 0.95; */
 }
 section {
   border-bottom: 1px solid var(--clr__divider__100);
@@ -147,6 +148,7 @@ button {
 }
 .active .question {
   font-weight: var(--fw__bold);
+  color: var(--clr__text__300);
 }
 .active #arrow {
   transform: rotate(180deg);
